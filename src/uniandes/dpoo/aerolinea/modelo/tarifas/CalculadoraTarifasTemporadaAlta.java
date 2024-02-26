@@ -5,6 +5,8 @@ import uniandes.dpoo.aerolinea.modelo.Vuelo;
 import uniandes.dpoo.aerolinea.modelo.cliente.Cliente;
 
 public class CalculadoraTarifasTemporadaAlta implements CalculadoraTarifas {
+	
+	protected int COSTO_POR_KM = 1000;
 
 	@Override
 	public int calcularTarifa(Vuelo vuelo, Cliente cliente) {

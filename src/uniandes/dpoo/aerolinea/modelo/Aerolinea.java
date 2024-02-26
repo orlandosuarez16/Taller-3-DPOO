@@ -188,7 +188,17 @@ public class Aerolinea
      */
     public Collection<Tiquete> getTiquetes( )
     {
-    	return null;
+    	List<Tiquete> tiquetes;
+    	tiquetes = new LinkedList<Tiquete>( );
+    	
+    	for (Vuelo vuelo: vuelos) {
+    		Collection<Tiquete> tiquetesVuelo;
+    		tiquetesVuelo = vuelo.getTiquetes();
+    		for (Tiquete tiquete: tiquetesVuelo) {
+    			tiquetes.add(tiquete);
+    		}	
+    	}
+    	return tiquetes;
 
     }
 

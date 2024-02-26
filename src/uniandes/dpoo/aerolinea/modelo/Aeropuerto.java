@@ -22,7 +22,7 @@ public class Aeropuerto
 	private Double latitud;
 	private Double longitud;
 	private HashSet<String> codigosUtilizados = new HashSet<String>();
-	private static final double RADIO_TERRESTRE = 6371;
+	private static int RADIO_TERRESTRE = 6371;
 	
 	public Aeropuerto (String nNombre, String nCodigo, String nNombreCiudad, Double nLatitud, Double nLongitud) {
 		this.nombre = nNombre;

@@ -18,6 +18,7 @@ public class ClienteCorporativo extends Cliente
 	
 
 	public ClienteCorporativo(String nNombreEmpresa, int nTamanoEmpresa) {
+		super();
 		this.nombreEmpresa = nNombreEmpresa;
 		this.tamanoEmpresa = nTamanoEmpresa;
 	}
@@ -28,6 +29,14 @@ public class ClienteCorporativo extends Cliente
 	
 	public int getTamanoEmpresa() {
 		return this.tamanoEmpresa;
+	}
+	
+	public String getTipoCliente() {
+		return CORPORATIVO;
+	}
+	
+	public String getIdentificador() {
+		return null;
 	}
 
     /**
